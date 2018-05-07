@@ -31,7 +31,7 @@ addons:
       - $HOME/firefox/mochitest.log
 
 install:
-  - pip install -U mercurial
+  - pip install --user mercurial
   - . $HOME/.nvm/nvm.sh; nvm install 9; nvm use 9;
   - ./bin/ci/install-yarn
   - ./bin/ci/clone-gecko.sh
